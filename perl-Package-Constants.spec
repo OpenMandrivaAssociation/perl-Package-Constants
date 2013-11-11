@@ -1,15 +1,15 @@
 %define	upstream_name	 Package-Constants
-%define upstream_version 0.02
+%define upstream_version 0.04
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	2
+Release:	1
 
 Summary:	Package Constants
 License:	Artistic/GPL
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}/
-Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Package/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	ftp://ftp.perl.org:21/pub/CPAN/modules/by-module/Package/Package-Constants-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildArch:	noarch
@@ -62,3 +62,4 @@ make test
 
 * Thu Jun 21 2007 Buchan Milne <bgmilne@mandriva.org> 0.01-1mdv2007.1
 - initial package
+
